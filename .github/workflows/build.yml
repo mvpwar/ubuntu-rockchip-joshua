@@ -15,8 +15,8 @@ jobs:
             #- desktop
             - server
           suite:
-            #- jammy
-            - noble
+            - jammy
+            #- noble
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -63,8 +63,8 @@ jobs:
     strategy:
         matrix:
           suite:
-            #- jammy
-            - noble
+            - jammy
+            #- noble
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -149,8 +149,8 @@ jobs:
           #- desktop
           - server
         suite:
-          #- jammy
-          - noble
+          - jammy
+          #- noble
         exclude:
           - board: armsom-sige5
             suite: jammy
