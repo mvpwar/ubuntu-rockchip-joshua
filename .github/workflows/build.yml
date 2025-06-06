@@ -19,7 +19,7 @@ jobs:
         id: release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v1.0
+          tag_name: v2.0
           token: ${{ secrets.GITHUB_TOKEN }}
           target_commitish: main
           draft: true
@@ -35,8 +35,8 @@ jobs:
             #- desktop
             - server
           suite:
-            - oracular
-            #- noble
+            #- oracular
+            - noble
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -83,8 +83,8 @@ jobs:
     strategy:
         matrix:
           suite:
-            - oracular
-            #- noble
+            #- oracular
+            - noble
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -169,8 +169,8 @@ jobs:
           #- desktop
           - server
         suite:
-          - oracular
-          #- noble
+          #- oracular
+          - noble
         exclude:
           - board: armsom-sige5
             suite: oracular
