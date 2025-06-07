@@ -36,8 +36,8 @@ jobs:
             - server
           suite:
             #- oracular
-            #- noble
-            - jammy
+            - noble
+            #- jammy
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -85,8 +85,8 @@ jobs:
         matrix:
           suite:
             #- oracular
-            #- noble
-            - jammy
+            - noble
+            #- jammy
     steps:
       - name: Get more disk space
         uses: jlumbroso/free-disk-space@main
@@ -172,8 +172,8 @@ jobs:
           - server
         suite:
           #- oracular
-          #- noble
-          - jammy
+          - noble
+          #- jammy
         exclude:
           - board: armsom-sige5
             suite: oracular
