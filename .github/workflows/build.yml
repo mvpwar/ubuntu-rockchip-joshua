@@ -35,8 +35,8 @@ jobs:
             #- desktop
             - server
           suite:
-            - oracular
-            - noble
+            #- oracular
+            #- noble
             - jammy
     steps:
       - name: Get more disk space
@@ -84,8 +84,8 @@ jobs:
     strategy:
         matrix:
           suite:
-            - oracular
-            - noble
+            #- oracular
+            #- noble
             - jammy
     steps:
       - name: Get more disk space
@@ -171,8 +171,8 @@ jobs:
           #- desktop
           - server
         suite:
-          - oracular
-          - noble
+          #- oracular
+          #- noble
           - jammy
         exclude:
           - board: armsom-sige5
